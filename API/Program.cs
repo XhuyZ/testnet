@@ -1,12 +1,13 @@
 using Microsoft.EntityFrameworkCore;
 using DAL.Context;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add AppDbContext and configure the connection string
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        new MySqlServerVersion(new Version(8, 0, 2)) // Replace with your MySQL server version
+    ));
 // Add other services
 builder.Services.AddControllers();
 
