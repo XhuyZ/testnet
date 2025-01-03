@@ -22,6 +22,11 @@ namespace DAL.Configuration // Replace with your actual namespace
                    .WithMany(p => p.OrderDetails)
                    .HasForeignKey(od => od.ProductId)
                    .OnDelete(DeleteBehavior.Restrict);
+            builder.HasData(
+                new OrderDetail { Id = 1, OrderId = 1, ProductId = 1, Quantity = 2 },
+                new OrderDetail { Id = 2, OrderId = 1, ProductId = 2, Quantity = 1 },
+                new OrderDetail { Id = 3, OrderId = 2, ProductId = 2, Quantity = 3 }
+            );
         }
     }
 }

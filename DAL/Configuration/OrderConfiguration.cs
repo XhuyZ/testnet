@@ -21,6 +21,10 @@ namespace DAL.Configuration // Replace with your actual namespace
                    .WithOne(od => od.Order) // Inverse navigation in OrderDetail
                    .HasForeignKey(od => od.OrderId) // Foreign key in OrderDetail
                    .OnDelete(DeleteBehavior.Cascade); // Cascade delete when Order is deleted
+            builder.HasData(
+                new Order { Id = 1, UserId = 1, OrderDate = new DateTime(2024, 1, 1) },
+                new Order { Id = 2, UserId = 2, OrderDate = new DateTime(2024, 1, 2) }
+            );
         }
     }
 }

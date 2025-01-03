@@ -1,0 +1,15 @@
+/home/xhuyz/testnet/DAL/bin/Debug/net8.0/DAL.deps.json
+/home/xhuyz/testnet/DAL/bin/Debug/net8.0/DAL.runtimeconfig.json
+/home/xhuyz/testnet/DAL/bin/Debug/net8.0/DAL.dll
+/home/xhuyz/testnet/DAL/bin/Debug/net8.0/DAL.pdb
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/DAL.csproj.AssemblyReference.cache
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/DAL.GeneratedMSBuildEditorConfig.editorconfig
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/DAL.AssemblyInfoInputs.cache
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/DAL.AssemblyInfo.cs
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/DAL.csproj.CoreCompileInputs.cache
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/DAL.sourcelink.json
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/DAL.dll
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/refint/DAL.dll
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/DAL.pdb
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/DAL.genruntimeconfig.cache
+/home/xhuyz/testnet/DAL/obj/Debug/net8.0/ref/DAL.dll

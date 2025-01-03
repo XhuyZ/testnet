@@ -7,11 +7,8 @@ namespace DAL.Configuration
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            // Table name
             builder.ToTable("Products");
-            // Primary key
             builder.HasKey(p => p.Id);
-            // Properties
             builder.Property(p => p.Name)
                    .IsRequired()
                    .HasMaxLength(200);
@@ -23,6 +20,10 @@ namespace DAL.Configuration
                    .WithOne(od => od.Product)
                    .HasForeignKey(od => od.ProductId)
                    .OnDelete(DeleteBehavior.Restrict);
+            builder.HasData(
+                new Product { Id = 1, Name = "Laptop", Price = 1500.00m },
+                new Product { Id = 2, Name = "Smartphone", Price = 800.00m }
+                );
         }
     }
 }
