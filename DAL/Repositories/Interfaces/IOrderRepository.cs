@@ -1,6 +1,6 @@
 namespace DAL.Repositories.Interfaces
 {
-  public interface IProductRepository
+  public interface IOrderRepository
   {
 
   }
