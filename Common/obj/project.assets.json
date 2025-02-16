@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/home/xhuyz/.nuget/packages/": {}
+    "C:\\Users\\xhuyz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/xhuyz/testnet/Common/Common.csproj",
+      "projectUniqueName": "C:\\Users\\xhuyz\\testnet\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "/home/xhuyz/testnet/Common/Common.csproj",
-      "packagesPath": "/home/xhuyz/.nuget/packages/",
-      "outputPath": "/home/xhuyz/testnet/Common/obj/",
+      "projectPath": "C:\\Users\\xhuyz\\testnet\\Common\\Common.csproj",
+      "packagesPath": "C:\\Users\\xhuyz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xhuyz\\testnet\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/xhuyz/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\xhuyz\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -38,6 +38,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -54,18 +59,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
