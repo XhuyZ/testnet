@@ -1,6 +1,7 @@
-using BLL.DTOs;
 using BLL.Interfaces;
+using BLL.DTOs;
 using Microsoft.AspNetCore.Mvc;
+
 namespace API.Controllers
 {
     [ApiController]
@@ -24,36 +25,11 @@ namespace API.Controllers
             return Ok(user);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllUsers()
-        {
-            var users = await _userService.GetAllUsersAsync();
-            return Ok(users);
-        }
-
         [HttpPost]
-        public async Task<IActionResult> AddUser(UserDto userDto)
+        public async Task<IActionResult> CreateUser([FromBody] UserDTO userDto)
         {
-            await _userService.AddUserAsync(userDto);
-            return CreatedAtAction(nameof(GetUserById), new { id = userDto.Id }, userDto);
-        }
-
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(int id, UserDto userDto)
-        {
-            if (id != userDto.Id)
-                return BadRequest();
-
-            await _userService.UpdateUserAsync(userDto);
-            return NoContent();
-        }
-
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(int id)
-        {
-            await _userService.DeleteUserAsync(id);
-            return NoContent();
+            var createdUser = await _userService.CreateUserAsync(userDto);
+            return CreatedAtAction(nameof(GetUserById), new { id = createdUser.Id }, createdUser);
         }
     }
 }
-

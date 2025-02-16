@@ -1309,6 +1309,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
       }
     }
   },
@@ -4282,11 +4292,17 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../Common/Common.csproj",
+      "msbuildProject": "../Common/Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 13.0.1",
+      "Common >= 1.0.0",
       "Microsoft.EntityFrameWorkCore >= 8.0.11",
       "Microsoft.EntityFrameWorkCore.Design >= 8.0.11",
       "Microsoft.EntityFrameWorkCore.Tools >= 8.0.11",
@@ -4299,19 +4315,19 @@
     ]
   },
   "packageFolders": {
-    "/home/xhuyz/.nuget/packages/": {}
+    "C:\\Users\\xhuyz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/xhuyz/testnet/DAL/DAL.csproj",
+      "projectUniqueName": "C:\\Users\\xhuyz\\testnet\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "/home/xhuyz/testnet/DAL/DAL.csproj",
-      "packagesPath": "/home/xhuyz/.nuget/packages/",
-      "outputPath": "/home/xhuyz/testnet/DAL/obj/",
+      "projectPath": "C:\\Users\\xhuyz\\testnet\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\xhuyz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\xhuyz\\testnet\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/xhuyz/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\xhuyz\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4322,13 +4338,22 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\xhuyz\\testnet\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\xhuyz\\testnet\\Common\\Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4391,18 +4416,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.11, 8.0.11]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.111/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
